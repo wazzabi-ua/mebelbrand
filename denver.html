@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<!-- <html style="background:#666; transition: background 0.2s ease;" xmlns="http://www.w3.org/1999/xhtml">-->
+<html lang="ua">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/preloader.js"></script>
+    <title>М'які меблі Mebelbrand.</title>
+</head>
+
+<body>
+    <div id='preloader'>
+        <div class="load">
+            <hr />
+            <hr />
+            <hr />
+            <hr />
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="page">
+            <div class="page__container">
+                <div class="page__header">
+                    <div class="polovyna-a">
+                        <a href="index.html">
+                            <div class="logo"></div>
+                        </a>
+                    </div>
+                    <div class="polovyna-b">
+                        <div class="rig">
+                            <div class="page__action">
+                                <button type="button" class="page__theme"></button>
+                                <button type="button" class="page__reset"></button>
+                                <button type="button" class="page__ico"></button>
+                                <button type="button" class="page__btn">
+                                    <div class="menu-btn">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="arrow">
+                    <div class="arrow-left">
+                        <a href="index.html"><img src="/img/ico/arrow-narrow-left.svg" alt="arrow left" /></a>
+                    </div>
+                    <div class="arrow-rigth">
+                        <a href="#"><img src="/img/ico/arrow-narrow-right.svg" alt="arrow rigth" /></a>
+                    </div>
+                </div>
+                <div class="solo-mebel">
+
+                    <div class="tabs">
+                        <div class="left-tabs">
+                            <button class=" tablink w3-red" onclick="openCity(event, 'London')"><img
+                                    src="/img/ico/divan-s.svg" alt="#" /></button><br>
+                            <button class="tablink" onclick="openCity(event, 'Paris')"><img src="/img/ico/divan-r.svg"
+                                    alt="#" /></button>
+                        </div>
+
+                        <div style="margin-left:0px">
+
+                            <div id="London" class="w3-animate-bottom city">
+
+                                <!-- Плашка -->
+                                <!-- <div class="plashka">
+                                    <p>-10%</p> 
+                                </div> -->
+                                <!-- Кінець плашки -->
+                                <!-- Chek -->
+                                <div class="chek">
+
+                                    <div>
+                                        <label class="btn" for="modal-1">+</label>
+                                    </div>
+
+                                    <input class="modal-state" id="modal-1" type="checkbox" />
+                                    <div class="modal">
+                                        <label class="modal__bg" for="modal-1"></label>
+                                        <div class="modal__inner">
+                                            <label class="modal__close" for="modal-1"></label>
+                                            <h2>Caaaats 1</h2>
+                                            <p><img src="https://i.imgur.com/HnrkBwB.gif" alt="" />Aliquam in sagittis
+                                                nulla. Curabitur euismod diam eget risus venenatis, sed dictum lectus
+                                                bibendum. Nunc nunc nisi, hendrerit eget nisi id, rhoncus rutrum velit.
+                                                Nunc vel mauris dolor. Class aptent taciti sociosqu ad litora torquent
+                                                per conubia nostra, per inceptos himenaeos. Aliquam fringilla quis nisi
+                                                eget imperdiet.</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="chek-2">
+
+                                    <div>
+                                        <label class="btn" for="modal-2">+</label>
+                                    </div>
+
+                                    <input class="modal-state" id="modal-2" type="checkbox" />
+                                    <div class="modal">
+                                        <label class="modal__bg" for="modal-2"></label>
+                                        <div class="modal__inner">
+                                            <label class="modal__close" for="modal-2"></label>
+                                            <h2>Caaaats 2</h2>
+                                            <p><img src="/img/divan/london/denver-1.png" alt="" />Aliquam in sagittis
+                                                nulla. Curabitur euismod diam eget risus venenatis, sed dictum lectus
+                                                bibendum. Nunc nunc nisi, hendrerit eget nisi id, rhoncus rutrum velit.
+                                                Nunc vel mauris dolor. Class aptent taciti sociosqu ad litora torquent
+                                                per conubia nostra, per inceptos himenaeos. Aliquam fringilla quis nisi
+                                                eget imperdiet.</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <!--modals-->
+
+                                <!-- Кінець chek -->
+                                <picture>
+                                    <source srcset="/img/divan/london/denver-1.png" type="image/jpeg"
+                                        media="(min-width:901px)">
+                                    <source srcset="/img/divan/london/london-900.png" type="image/jpeg"
+                                        media="(min-width:601px)">
+                                    <source srcset="/img/divan/london/london-600.png" type="image/jpeg"
+                                        media="(max-width:600px)">
+                                    <img src="/img/divan/london/london-3.png" alt="">
+                                </picture>
+                            </div>
+
+                            <div id="Paris" class="w3-animate-bottom city" style="display:none">
+                                <!-- Плашка -->
+                                <!-- <div class="plashka">
+                                    <p>-10%</p> 
+                                </div> -->
+                                <!-- Кінець плашки -->
+                                <source srcset="/img/divan/london/denver-2.png" type="image/jpeg"
+                                    media="(min-width:901px)">
+                                <source srcset="/img/divan/london/london-1.png" type="image/jpeg"
+                                    media="(min-width:601px)">
+                                <source srcset="/img/divan/london/london-2.png" type="image/jpeg"
+                                    media="(max-width:600px)">
+                                <img src="/img/divan/london/denver-2.png" alt="">
+                                </picture>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="page__nazva">
+                        <p>ДИВАН <span>ДЕНВЕР 2LR</span></p>
+                    </div>
+                </div>
+                <!-- <h1 class="page__title">ПРЯМИЙ ДИВАН ЛОНДОН</h1> -->
+                <div class="infa">
+                    <table>
+                        <tr>
+                            <td>
+                                <img src="/img/ico/camera_pink.svg" onclick="openModals();currentSlide(1)"
+                                    class="knopka">
+                                <div id="myModal" class="modals">
+                                    <span class="close cursor" onclick="closeModals()">&times;</span>
+                                    <div class="modals-content">
+                                        <div class="mySlides">
+                                            <div class="numbertext">1 / 4</div>
+                                            <picture>
+                                                <source srcset="/img/img-galery-dender2lr/test-1200x732.jpg"
+                                                    type="image/jpeg" media="(min-width:901px)">
+                                                <source srcset="/img/img-galery-dender2lr/test-900x549.jpg"
+                                                    type="image/jpeg" media="(min-width:601px)">
+                                                <source srcset="/img/img-galery-dender2lr/test-600x366.jpg"
+                                                    type="image/jpeg" media="(max-width:600px)">
+                                                <img src="/img/img-galery-dender2lr/test-1200x732.jpg" alt="">
+                                            </picture>
+                                        </div>
+                                        <div class="mySlides">
+                                            <div class="numbertext">2 / 4</div>
+                                            <img src="/img/img-galery-dender2lr/002.jpg" style="width:100%">
+                                        </div>
+                                        <div class="mySlides">
+                                            <div class="numbertext">3 / 4</div>
+                                            <img src="/img/img-galery-dender2lr/003.jpg" style="width:100%">
+                                        </div>
+                                        <div class="mySlides">
+                                            <div class="numbertext">4 / 4</div>
+                                            <img src="/img/img-galery-dender2lr/003.jpg" style="width:100%">
+                                        </div>
+                                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                                        <a class="next" onclick="plusSlides(1)">&#10095;</a> 
+                                    </div>
+                                </div>
+                            </td>
+                            <td><a href="#rozmir"><button type="button"
+                                        class="page__rozmir"></button><span>Розміри</span></a></td>
+                            <td><a href="#mehan"><button type="button"
+                                        class="page__mehan"></button><span>Механізм</span></a></td>
+                            <td><a href="#decor"><button type="button"
+                                        class="page__decor"></button><span>Декори</span></a></td>
+                            <td><a href="http://mebelbrand.com.ua">
+                                    <div class="sale"><button type="button"
+                                        class="page__sale"></button><span>Купити</span></div>
+                                </a></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="page__text">
+                    <p>Сучасний прямий диван «Лондон» зроблений з якісної деревини, наповнювача та тканини, а
+                        посилений
+                        ламелями пружблок служить подвійним ортопедичним матрацом, який забезпечить комфорт та
+                        зручність
+                        під час сну чи відпочинку.<br>
+                        Зручні широкі м’які підлокітники оздоблені декоративним кантом роблять цю модель витонченою
+                        та
+                        додадуть кімнаті, в якій він стоятиме, шарму та креативності.<br>
+                        Також пропонуємо звернути увагу на простору нішу в дивані, в якій зручно зберігати постільну
+                        білизну і вона не лежатиме на поверхні. Наповнювач подушок дивана – холофайбер та ППУ.<br>
+                        Механізм ТІК-ТАК зручно трансформує ваш диван в зручне ліжко для сну.
+                    </p>
+                </div>
+
+                <div id="galery" class="galery">
+
+                </div>
+
+                <div id="rozmir" class="rozmir">
+                    <div class="row">
+                        <div class="column">
+
+                            <dav class="column-zag">
+                                <h2>Розміри</h2>
+                            </dav>
+
+                            <table class="tabroz">
+                                <thead>
+                                    <tr>
+                                        <th>Розміри, мм</th>
+                                        <th>Ширина</th>
+                                        <th>Висота</th>
+                                        <th>Довжина</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Складений</td>
+                                        <td>2250</td>
+                                        <td>900</td>
+                                        <td>1050</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Розкладений</td>
+                                        <td>2000</td>
+                                        <td>460</td>
+                                        <td>1600</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Спального місця</td>
+                                        <td>2000</td>
+                                        <td>-</td>
+                                        <td>1600</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Сидіння</td>
+                                        <td>-</td>
+                                        <td>460</td>
+                                        <td>-</td>
+                                    </tr>
+                                <tbody>
+                            </table>
+
+                            <div class="warning">
+                                <div class="warning-blok">
+                                    <img src="/img/ico/warning-alt.svg" alt="arrow left" width="25px" /> Максимальне
+                                    навантаження на одне спальне місце: 120 кг.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="column">
+                            <div id="mehan" class="mehan">
+                                <dav class="column-zag">
+                                    <h2>Механізм розкладдання ТІК-ТАК</h2>
+                                    <div class="video-container">
+                                        <iframe src="https://www.youtube.com/embed/5BR7JFTlh-Y" frameborder="0"
+                                            allow="accelerometer; autoplay; encrypted-media; gyroscope;"
+                                            allowfullscreen></iframe>
+                                    </div>
+                                </dav>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div id="decor" class="decor">Декор</div>
+                <div class="uno" w3-include-html="/blocks/block.html"></div>
+                <div w3-include-html="/blocks/contact.html"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="menu">
+        <div class="logo"></div>
+        <nav>
+            <ul>
+                <li><a href="#">Дивани</a></li>
+                <li><a href="#">Ліжка</a></li>
+                <li><a href="#">Контакти</a></li>
+            </ul>
+        </nav>
+        <div class="page__action">
+            <button type="button" class="page__insta"></button>
+            <button type="button" class="page__facebook"></button>
+            <button type="button" class="page__youtube"></button>
+        </div>
+    </div>
+
+</body>
+<footer>
+    <script src="js/theme.js"></script>
+    <script src="js/include.js"></script>
+    <script src="js/incudeHTML.js"></script>
+    <script src="js/meny.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/galery.js"></script>
+
+    <p>12345</p>
+
+    <div w3-include-html="/blocks/phone-viber.html"></div>
+</footer>
+
+</html>
