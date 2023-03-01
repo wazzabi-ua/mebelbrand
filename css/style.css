@@ -1131,7 +1131,7 @@ html.dark .page__decor {
 	position: absolute;
 	width: 2px;
 	height: 1.5em;
-	background: #ccc;
+	background: #9088a0;
 	display: block;
 	transform: rotate(45deg);
 	left: 50%;
@@ -1345,9 +1345,16 @@ html.dark .video-container iframe {
 	width: 100%;
 	height: 100%;
 	overflow: auto;
-	background-color: black;
 }
-  
+
+html.light .modals {
+	background-color: #F4F6F7;
+}
+
+html.dark .modals {
+	background-color: #222125;
+}
+
   /* Modal Content */
 .modals-content {
 	position: relative;
@@ -1356,8 +1363,16 @@ html.dark .video-container iframe {
 	padding: 0;
 	width: 90%;
 	max-width: 1200px;
-	margin-top: 3%;
+	margin-top: 5%;
 }
+
+@media screen and (max-width: 900px) {
+	.modals-content {
+		width: 100%;
+		margin-top: 10%;
+	}
+  }
+  
 
 @media screen and (max-width: 600px) {
 	.modals-content {
@@ -1368,12 +1383,13 @@ html.dark .video-container iframe {
   
   /* The Close Button */
 .close {
-	color: crimson;
+	color: #9088a0;
 	position: absolute;
 	top: 10px;
 	right: 25px;
-	font-size: 35px;
-	z-index: 13;
+	font-size: 3.5em;
+	font-weight: 200;
+	z-index: 11;
 }
 
   
