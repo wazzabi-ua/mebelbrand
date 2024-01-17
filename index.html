@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="ua">
+
+<head>
+  <title>М'які меблі Mebelbrand.</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="manifest" href="site.webmanifest" /><!-- ??? -->
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+  <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+  <!-- Hero -->
+  <div class="page">
+    <section class="et-hero-tabs">
+      <!--
+        <div class="center-text">
+           <h1>М'які меблі від виробника.</h1>
+          <h3>М'які меблі від виробника.</h3>
+        </div>
+      -->
+      <div class="et-hero-tabs-container">
+        <!-- НавБар -->
+        <div class="container-menu-top bor-bot layout">
+          <div class="colum-half">
+            <div class="left-two">
+              <a href="london.html">
+                <div class="logo"></div>
+              </a>
+            </div>
+          </div>
+
+          <div class="colum-half-rigth rigth-two">
+            <div class="switch">
+              <input type="checkbox" id="themeSwitch" />
+              <label for="themeSwitch" class="slider">
+                <div class="ico-swich"></div>
+              </label>
+            </div>
+
+            <div class="menu-btn">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <!-- підвантаження меню -->
+            <div class="menu">
+              <div w3-include-html="components/menu.html"></div>
+            </div>
+          </div>
+
+
+        </div>
+
+        <!-- Кінець НавБар -->
+
+        <div class="container-menu layout">
+
+          <div class="dropdown">
+            <button class="dropbtn">Сортувати</button>
+            <div class="dropdown-content">
+              <a class="et-hero-tab gol" href="#tab-sectionOne" onclick="filterSelection('all')">Всі меблі</a>
+              <a class="et-hero-tab gol" href="#tab-sectionOne" onclick="filterSelection('divan')">Дивани</a>
+              <a class="et-hero-tab gol" href="#tab-sectionOne" onclick="filterSelection('lizhko')">Ліжка</a>
+              <a class="et-hero-tab gol" href="#tab-sectionOne" onclick="filterSelection('inshe')">Інше</a>
+              <a class="et-hero-tab gol" href="#tab-sectionOne" onclick="filterSelection('podushky')">Подушки</a>
+            </div>
+          </div>
+
+          <div style="width: 100%;"></div>
+
+          <!--
+          <a class="et-hero-tab gol" href="#tab-sectionOne" onclick="filterSelection('all')">
+            <div class="ico-sticky vsi-ico"></div>
+            <span>Всі меблі</span>
+          </a>
+          
+          <div class="slash"></div>
+
+          <a class="et-hero-tab gol" href="#tab-sectionOne" onclick="filterSelection('divan')">
+            <div class="ico-sticky divan-ico"></div>
+            <span>Дивани</span>
+          </a>
+
+          <div class="slash"></div>
+
+          <a class="et-hero-tab gol" href="#tab-sectionOne" onclick="filterSelection('lizhko')">
+            <div class="ico-sticky logko-ico"></div>
+            <span>Ліжка</span>
+          </a>
+
+          <div class="slash"></div>
+
+          <a class="et-hero-tab gol" href="#tab-sectionThree">
+            <div class="ico-sticky file-text-ico"></div>
+            <span>Як замовити</span>
+          </a>
+-->
+          <a class="et-hero-tab no-under" href="#tab-other">
+            <div class="crimson">
+              <div class="ico-sticky sale-ico"></div>
+              <span>Купити</span>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Main -->
+    <main class="et-main">
+      <!-- Section-1 -->
+      <section class="et-slides" id="tab-sectionOne">
+
+        <!-- Додайте інші об'єкти за потреби -->
+  </div>
+
+  <div class="sort">
+
+    <div class="puk divan">
+      <a href="london.html">
+        <div class="rubrikan-mebel">
+          <img src="img/divan/london/london-2023-sm.png" alt="прямий диван Лондон">
+          <div class="nazvarub">
+            <p>прямий<br>диван</p><span>Лондон</span>
+            <div class="arrow"></div>
+          </div>
+          <div class="hit">ХІТ</div>
+        </div>
+      </a>
+    </div>
+
+    <div class="puk divan">
+      <a href="denver.html">
+        <div class="rubrikan-mebel">
+          <img src="img/divan/denver-2lr/denver-2lr-2024-sm.png" alt="прямий диван Денвер">
+          <div class="nazvarub">
+            <p>прямий<br>диван</p><span>Denver-2LR</span>
+            <div class="arrow"></div>
+          </div>
+          <!-- <div class="hit">ХІТ</div> -->
+        </div>
+      </a>
+    </div>
+
+    <div class="puk lizhko">
+      <a href="london.html">
+        <div class="rubrikan-mebel">
+          <img src="img/ligko/verona/lijko-verona-sm.png" alt="двоспальне ліжко Лондон">
+          <div class="nazvarub">
+            <p>двоспальне<br>ліжко</p><span>Верона</span>
+            <div class="arrow"></div>
+          </div>
+          <!-- <div class="hit">ХІТ</div> -->
+        </div>
+      </a>
+    </div>
+
+    <div class="puk lizhko">
+      <a href="modena.html">
+        <div class="rubrikan-mebel">
+          <img src="img/ligko/modena/lijko-modena-sm.png" alt="двоспальне ліжко Лондон">
+          <div class="nazvarub">
+            <p>двоспальне<br>ліжко</p><span>Модена</span>
+            <div class="arrow"></div>
+          </div>
+          <!-- <div class="hit">ХІТ</div> -->
+        </div>
+      </a>
+    </div>
+
+    <div class="puk divan">
+      <a href="london.html">
+        <div class="rubrikan-mebel">
+          <img src="img/divan/london/london-2023-sm.png" alt="прямий диван Лондон">
+          <div class="nazvarub">
+            <p>прямий<br>диван</p><span>Лондон</span>
+            <div class="arrow"></div>
+          </div>
+          <div class="znizhka">ЗНИЖКА</div>
+        </div>
+      </a>
+    </div>
+
+    <div class="puk divan">
+      <a href="london.html">
+        <div class="rubrikan-mebel">
+          <img src="img/divan/london/london-2023-sm.png" alt="прямий диван Лондон">
+          <div class="nazvarub">
+            <p>прямий<br>диван</p><span>Лондон</span>
+            <div class="arrow"></div>
+          </div>
+          <div class="akciya">АКЦІЯ</div>
+        </div>
+      </a>
+    </div>
+
+    <div class="puk inshe">
+      <a href="london.html">
+        <div class="rubrikan-mebel">
+          <img src="img/divan/london/london-2023-sm.png" alt="двоспальне ліжко Лондон">
+          <div class="nazvarub">
+            <p>ІНШЕ Подушка<br>для тварин</p><span>Лондон</span>
+            <div class="arrow"></div>
+          </div>
+          <!-- <div class="hit">ХІТ</div> -->
+        </div>
+      </a>
+    </div>
+
+
+    <div class="puk podushky">
+      <a href="index2.html">
+        <div class="rubrikan-mebel">
+          <img src="img/divan/london/london-2023-sm.png" alt="Подушка">
+          <div class="nazvarub">
+            <p><br></p><span>Подушка</span>
+            <div class="arrow"></div>
+          </div>
+          <div class="hit">ХІТ</div>
+        </div>
+      </a>
+    </div>
+
+    <div class="puk divan">
+      <a href="london.html">
+        <div class="rubrikan-mebel">
+          <img src="img/divan/london/london-2023-sm.png" alt="прямий диван Лондон">
+          <div class="nazvarub">
+            <p>прямий<br>диван</p><span>Лондон</span>
+            <div class="arrow"></div>
+          </div>
+          <div class="akciya">АКЦІЯ</div>
+        </div>
+      </a>
+    </div>
+
+    <div class="puk divan">
+      <a href="london.html">
+        <div class="rubrikan-mebel">
+          <img src="img/divan/london/london-2023-sm.png" alt="прямий диван Лондон">
+          <div class="nazvarub">
+            <p>прямий<br>диван</p><span>Лондон</span>
+            <div class="arrow"></div>
+          </div>
+          <!-- <div class="akciya">АКЦІЯ</div> -->
+        </div>
+      </a>
+    </div>
+
+    <div class="puk divan">
+      <a href="london.html">
+        <div class="rubrikan-mebel">
+          <img src="img/divan/london/london-2023-sm.png" alt="прямий диван Лондон">
+          <div class="nazvarub">
+            <p>прямий<br>диван</p><span>Лондон</span>
+            <div class="arrow"></div>
+          </div>
+          <!-- <div class="akciya">АКЦІЯ</div> -->
+        </div>
+      </a>
+    </div>
+
+    <div class="puk divan">
+      <a href="london.html">
+        <div class="rubrikan-mebel">
+          <img src="img/divan/london/london-2023-sm.png" alt="прямий диван Лондон">
+          <div class="nazvarub">
+            <p>прямий<br>диван</p><span>Лондон</span>
+            <div class="arrow"></div>
+          </div>
+          <!-- <div class="akciya">АКЦІЯ</div> -->
+        </div>
+      </a>
+    </div>
+
+  </div>
+
+  </section>
+
+
+  <!-- Section-2 -->
+  <section class="et-slide-w" id="tab-sectionThree">
+  </section>
+
+  <!-- Section-5 -->
+  <section class="et-slide" id="tab-other">
+    <!-- <h1>Купити</h1> -->
+    <div class="box-sale">
+      <div>
+        <p class="mttenten">
+          Придбати наші меблі можливо просто зв'язавшись з нами:<br>
+          (098) 993 83 94, (067) 548 23 20, mebelbrand@ukr.net
+        </p>
+        <br>
+        <div class="magline">
+          <div class="imglogomag"><img src="img/256x256.png" alt=""></div>
+          <div class="adresa">Інтернет-магазин <a href="http://mebelbrand.com.ua">mebelbrand.com.ua</a></div>
+          <div class="regim">Пн. - Нд. <br>Цілодобово</div>
+        </div>
+        <br>
+        <p class="mtten mbten">
+          Наші магазини-виставки:
+        </p>
+
+        <div class="magline">
+          <div class="imglogomag"><img src="img/256x256.png" alt=""></div>
+          <div class="adresa">Київська область, м. Біла Церква, вул.Матросова, 48</div>
+          <div class="regim">Пн. - Пт. <br>9:00 - 16:00</div>
+        </div>
+
+        <div class="magline mtten">
+          <div class="imglogomag"><img src="img/256x256.png" alt=""></div>
+          <div class="adresa">Київська область, м. Біла Церква, вул.Таращанська 2м</div>
+          <div class="regim">Пн. - Пт. <br>9:00 - 16:00</div>
+        </div>
+
+        <div class="magline mtten">
+          <div class="imglogomag"><img src="img/256x256.png" alt=""></div>
+          <div class="adresa">Вишгородський р-н, м.Димер, вул. Соборна 8</div>
+          <div class="regim">Пн. - Пт. <br>9:00 - 16:00</div>
+        </div>
+
+        <br>
+        <p class="mtten mbten">
+          Магазини-партнери:
+        </p>
+
+        <div class="magline">
+          <div class="imglogomag"><img src="img/tab-logo.png" alt=""></div>
+          <div class="adresa"><a href="https://www.taburetka.ua">www.taburetka.ua</a></div>
+        </div>
+
+        <div class="magline">
+          <div class="imglogomag"><img src="img/dub-logo.png" alt=""></div>
+          <div class="adresa"><a href="https://www.dybok.com.ua">www.dybok.com.ua</a></div>
+        </div>
+
+      </div>
+
+      <div class="magimg pteno">
+        <img src="img/mag.jpg" alt="">
+      </div>
+
+    </div>
+
+  </section>
+  </main>
+
+  <footer>
+    <div class="container-footer">
+      <div w3-include-html="components/footer.html"></div>
+    </div>
+    <!-- зв'язок -->
+    <div class="container-contact">
+      <div w3-include-html="components/communication.html"></div>
+    </div>
+  </footer>
+  </div>
+
+  <script>
+    function filterSelection(category) {
+      var container = document.getElementsByClassName("sort")[0];
+      var allItems = container.getElementsByClassName("puk");
+
+      // Сховати всі елементи
+      for (var i = 0; i < allItems.length; i++) {
+        allItems[i].style.display = "none";
+      }
+
+      // Вивести потрібні елементи
+      if (category === "all") {
+        showItems(allItems);
+      } else {
+        var selectedItems = container.getElementsByClassName(category);
+        showItems(selectedItems);
+      }
+    }
+
+    function showItems(items) {
+      for (var i = 0; i < items.length; i++) {
+        items[i].style.display = "block";
+      }
+    }
+  </script>
+
+  <script type="module" src="js/gallery.js"></script>
+  <script type="module" src="js/include.js"></script>
+  <script type="module" src="js/menu.js"></script>
+  <script type="module" src="js/sticky.js"></script>
+  <script type="module" src="js/theme.js"></script>
+  <script type="module" src="js/tabs.js"></script>
+  <script type="module" src="js/modal.js"></script>
+  <script type="module" src="js/hiden.js"></script>
+  <!-- Sticky-meny -->
+</body>
+
+</html>
