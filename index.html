@@ -119,6 +119,10 @@
         <!-- Додайте інші об'єкти за потреби -->
   </div>
 
+  <div style="margin: 0 auto; max-width: 1200px; padding: 10px;">
+    <p>Кількість показаних товарів: <span id="counter">0</span></p>
+  </div>
+
   <div class="sort">
 
     <div class="puk divan">
@@ -361,7 +365,7 @@
     </div>
   </footer>
   </div>
-
+  <!--
   <script>
     function filterSelection(category) {
       var container = document.getElementsByClassName("sort")[0];
@@ -384,6 +388,47 @@
     function showItems(items) {
       for (var i = 0; i < items.length; i++) {
         items[i].style.display = "block";
+      }
+    }
+
+  </script>
+-->
+
+  <script>
+    var counter = 0; // Лічильник
+
+    // Визначте лічильник за замовчуванням
+    var counterElement = document.getElementById("counter");
+    counterElement.textContent = document.getElementsByClassName("puk").length;
+
+    function filterSelection(category) {
+      var container = document.getElementsByClassName("sort")[0];
+      var allItems = container.getElementsByClassName("puk");
+
+      // Сховати всі елементи
+      for (var i = 0; i < allItems.length; i++) {
+        allItems[i].style.display = "none";
+      }
+
+      // Оновити лічильник
+      counter = 0;
+
+      // Вивести потрібні елементи
+      if (category === "all") {
+        showItems(allItems);
+      } else {
+        var selectedItems = container.getElementsByClassName(category);
+        showItems(selectedItems);
+      }
+
+      // Оновити лічильник
+      counterElement.textContent = counter;
+    }
+
+    function showItems(items) {
+      for (var i = 0; i < items.length; i++) {
+        items[i].style.display = "block";
+        counter++;
       }
     }
   </script>
